@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   background-image: url("../images/bg-image.jpg");
   backdrop-filter: blur(5px);
@@ -16,6 +17,7 @@ body {
   min-height: 94vh;
   padding-top: 25px;
 }
+
 .table {
   width: 100%;
   min-height: 50vh;
@@ -23,12 +25,13 @@ body {
   background-color: #e7e4e4;
   border-collapse: collapse;
 }
+
 td {
   text-align: center;
   border: #d1c4c4 solid 1px;
   font-size: 16px;
   font-weight: 600;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   cursor: pointer;
 }
 
