@@ -22,7 +22,7 @@ body {
   width: 100%;
   min-height: 50vh;
   padding-left: 10px;
-  background-color: #e7e4e4;
+  background-color: #e0e0e0;
   border-collapse: collapse;
 }
 
@@ -36,6 +36,6 @@ td {
 }
 
 td:last-child {
-  background-color: #ff6b00;
+  background-color: #ff6400;
   color: #fff;
 }
