@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 class Result extends Component {
   constructor(props) {
@@ -8,19 +7,24 @@ class Result extends Component {
   }
 
   render() {
-    const { result } = this.props;
+    const { total, next, operation } = this.props;
     return (
-      <div className="result-container">
-        <p>{result}</p>
-      </div>
+      <>
+        <h2 className="title">Your Math Calculator</h2>
+        <div className="result-container">
+          <span>{total}</span>
+          <span>{operation}</span>
+          <span>{next}</span>
+        </div>
+      </>
     );
   }
 }
-Result.propTypes = {
-  result: PropTypes.number,
-};
+// Result.propTypes = {
+//   result: PropTypes.number,
+// };
 
-Result.defaultProps = {
-  result: 0,
-};
+// Result.defaultProps = {
+//   result: 0,
+// };
 export default Result;

@@ -20,22 +20,36 @@ body {
 
 .table {
   width: 100%;
+  display: grid;
+  box-sizing: border-box;
   min-height: 50vh;
-  padding-left: 10px;
   background-color: #e0e0e0;
   border-collapse: collapse;
+  row-gap: 1px;
 }
 
-td {
-  text-align: center;
-  border: #d1c4c4 solid 1px;
+.table-row5 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  column-gap: 1px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1px;
+}
+
+button {
+  border: none;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.03em;
   cursor: pointer;
 }
 
-td:last-child {
+.table-row button:last-child,
+.table-row5 button:last-child {
   background-color: #ff6400;
   color: #fff;
 }
