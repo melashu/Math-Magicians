@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 
-class Result extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+function Result(props){
+  
 
-  render() {
-    const { total, next, operation } = this.props;
+    const { total, next, operation } = props;
     return (
       <>
         <h2 className="title">Your Math Calculator</h2>
@@ -18,7 +14,7 @@ class Result extends Component {
         </div>
       </>
     );
-  }
+  
 }
 // Result.propTypes = {
 //   result: PropTypes.number,
