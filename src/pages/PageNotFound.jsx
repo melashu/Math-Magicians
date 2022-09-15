@@ -5,7 +5,7 @@ import { BsEmojiAngry } from 'react-icons/bs';
 const PageNotFound = () => (
   <div className="no-page">
     {' '}
-    <p>
+    <p className="not-found-message">
       {' '}
       Sorry page is not found here!
       {' '}
