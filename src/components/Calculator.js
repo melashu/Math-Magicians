@@ -1,35 +1,26 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 import Result from './Result';
 import Table from './Table';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: 0,
-      next: null,
-      operation: null,
-    };
+const Calculator = () => {
+  const [initState, setInitState] = useState({
+    total: 0,
+    next: null,
+    operation: null,
+  });
 
-    this.onClickHndler = this.onClickHndler.bind(this);
-  }
+  const onClickHndler = (buttonName) => {
+    setInitState((prev) => calculate(prev, buttonName));
+  };
 
-  onClickHndler(buttonName) {
-    const val = calculate(this.state, buttonName);
-    const { total, next, operation } = val;
-    this.setState({ total, next, operation });
-  }
-
-  render() {
-    const { total, next, operation } = this.state;
-    return (
-      <div>
-        <Result total={total} next={next} operation={operation} />
-        <Table onClickHndler={this.onClickHndler} />
-      </div>
-    );
-  }
-}
+  const { total, next, operation } = initState;
+  return (
+    <div>
+      <Result total={total} next={next} operation={operation} />
+      <Table onClickHndler={onClickHndler} />
+    </div>
+  );
+};
 
 export default Calculator;
