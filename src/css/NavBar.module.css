@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(49, 49, 49);
+  align-items: center;
+  padding: 10px 25px;
+  min-height: 50px;
+  box-shadow: 1px 10px 5px #333;
+}
+
+.navlist {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+h2 {
+  color: #ff6400;
+  cursor: pointer;
+}
+.navlist > * {
+  text-decoration: none;
+  margin-right: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff6400;
+  border-right: #ff6400 1px solid;
+  padding-right: 10px;
+}
