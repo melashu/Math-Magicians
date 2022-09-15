@@ -9,7 +9,6 @@ footer {
   left: 0;
   right: 0;
   min-height: 50px;
-
 }
 
 ul {
@@ -21,6 +20,7 @@ li {
   display: inline-block;
   margin-right: 50px;
 }
+
 a {
   text-decoration: none;
   color: #333;

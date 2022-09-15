@@ -13,10 +13,12 @@
   display: flex;
   justify-content: space-between;
 }
+
 h2 {
   color: #ff6400;
   cursor: pointer;
 }
+
 .navlist > * {
   text-decoration: none;
   margin-right: 25px;
