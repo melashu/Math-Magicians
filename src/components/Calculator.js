@@ -16,9 +16,13 @@ const Calculator = () => {
 
   const { total, next, operation } = initState;
   return (
-    <div>
-      <Result total={total} next={next} operation={operation} />
-      <Table onClickHndler={onClickHndler} />
+    <div className="container">
+      <h1 className="cal-title">Lets do some Maths together!</h1>
+
+      <div className="cal-container">
+        <Result total={total} next={next} operation={operation} />
+        <Table onClickHndler={onClickHndler} />
+      </div>
     </div>
   );
 };
