@@ -4,19 +4,30 @@
 }
 
 body {
-  background-image: url("../images/bg-image.jpg");
-  backdrop-filter: blur(5px);
+  /* background-image: url("../images/bg-image.jpg"); */
+  /* backdrop-filter: blur(5px); */
   background-size: cover;
   padding: 0;
   margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #root {
-  width: 40%;
-  margin: 0 auto;
   min-height: 94vh;
-  padding-top: 25px;
+  
 }
+
+.container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+padding: 15px;
+  
+}
+
+.cal-title{
+  color: #ff6400;
+}
+
 
 .table {
   width: 100%;
