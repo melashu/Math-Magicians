@@ -11,10 +11,11 @@
 - CSS
 
 ## Live Demo
-# Comming soon
+[Go Live](https://mathmagicianapp.netlify.app/)
 
 ## Screenshot 
-Comming soon
+![screenshot](https://user-images.githubusercontent.com/30173722/190748946-02175cf7-5d25-4501-86c5-5594745e28de.png)
+
 
 ## Getting Started
 
