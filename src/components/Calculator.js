@@ -17,7 +17,7 @@ const Calculator = () => {
   const { total, next, operation } = initState;
   return (
     <div className="container">
-      <h1 className="cal-title">Lets do some Maths together!</h1>
+      <h1 className="cal-title" data-testid="title">Lets do some Maths together!</h1>
 
       <div className="cal-container">
         <Result total={total} next={next} operation={operation} />
