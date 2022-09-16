@@ -1,0 +1,16 @@
+.home-container {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+p {
+  text-align: justify;
+  color: #444;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+}

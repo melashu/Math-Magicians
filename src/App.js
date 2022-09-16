@@ -1,8 +1,8 @@
 import React from 'react';
-import Calculator from './components/Calculator';
+import Navbar from './components/Navbar';
 
 function App() {
-  return <Calculator />;
+  return <Navbar />;
 }
 
 export default App;
