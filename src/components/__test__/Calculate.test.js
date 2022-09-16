@@ -1,4 +1,4 @@
-import calculate from "../../logic/calculate";
+import calculate from '../../logic/calculate';
 
 describe('Return Calculator Result base on Button Pressed', () => {
   test('Return Total of 38 if equals button is pressed with object containing 34 + 4', () => {

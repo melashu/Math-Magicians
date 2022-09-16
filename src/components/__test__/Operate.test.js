@@ -1,10 +1,10 @@
-import operate from "../../logic/operate";
+import operate from '../../logic/operate';
 
 describe('Test calculations of 2 numbers with different operators', () => {
   test('adds 34 + 4 equals 38', () => {
     expect(operate(34, 4, '+')).toBe('38');
   });
-  
+
   test('subtracts 34 - 4 equals 30', () => {
     expect(operate(34, 4, '-')).toBe('30');
   });
@@ -24,5 +24,4 @@ describe('Test calculations of 2 numbers with different operators', () => {
   test('adds 4 & 4 to throw Error', () => {
     expect(() => operate(4, 4, '&')).toThrow(Error);
   });
-
 });
