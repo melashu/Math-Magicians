@@ -1,0 +1,14 @@
+.qoute-container {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.qoute {
+  font-size: 40px;
+  color: #ff6400;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

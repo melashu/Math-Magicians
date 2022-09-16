@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* background-image: url("../images/bg-image.jpg"); */
+
+  /* backdrop-filter: blur(5px); */
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  min-height: 94vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+
+.cal-title {
+  color: #ff6400;
+}
+
+.table {
+  width: 100%;
+  display: grid;
+  box-sizing: border-box;
+  min-height: 50vh;
+  background-color: #e0e0e0;
+  border-collapse: collapse;
+  row-gap: 1px;
+}
+
+.table-row5 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  column-gap: 1px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1px;
+}
+
+button {
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.table-row button:last-child,
+.table-row5 button:last-child {
+  background-color: #ff6400;
+  color: #fff;
+}
