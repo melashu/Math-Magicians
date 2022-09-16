@@ -19,4 +19,10 @@ describe("Testing Result component", () => {
     const container = screen.queryByTestId("result");
     expect(container).toHaveTextContent("45-8");
   });
+    
+     it("Testing 5, 8 and - visible or not", () => {
+       render(<Result total={5} next={8} operation="-" />);
+       const container = screen.queryByTestId("result");
+       expect(container).toHaveTextContent("5-8");
+     });
 });
