@@ -3,7 +3,7 @@ const Result = (props) => {
   return (
     <>
       <h2 className="title">Your Math Calculator</h2>
-      <div className="result-container">
+      <div className="result-container" data-testid="result">
         <span>{total}</span>
         <span>{operation}</span>
         <span>{next}</span>
